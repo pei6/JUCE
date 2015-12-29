@@ -75,7 +75,7 @@
  #if JUCE_USE_FREETYPE_AMALGAMATED
   #include "native/freetype/FreeTypeAmalgam.h"
  #else
-  #include <ft2build.h>
+  #include <freetype2/ft2build.h>
   #include FT_FREETYPE_H
  #endif
 #endif
