@@ -247,6 +247,9 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\GpuStateComponent.cpp">
+      <Filter>gvt-state\Source</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\MainComponent.cpp">
       <Filter>gvt-state\Source</Filter>
     </ClCompile>
@@ -1545,10 +1548,19 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\GpuStateComponent.h">
+      <Filter>gvt-state\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\gvt_state.h">
+      <Filter>gvt-state\Source</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\gvt_state_component.h">
+      <Filter>gvt-state\Source</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\Source\Trendgraph.h">
       <Filter>gvt-state\Source</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\Source\gpu_engine_usage.h">
+    <ClInclude Include="..\..\Source\Trendblock.h">
       <Filter>gvt-state\Source</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Source\MainComponent.h">

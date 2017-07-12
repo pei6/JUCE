@@ -138,6 +138,7 @@
     </Bscmake>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\Source\GpuStateComponent.cpp"/>
     <ClCompile Include="..\..\Source\MainComponent.cpp"/>
     <ClCompile Include="..\..\Source\Main.cpp"/>
     <ClCompile Include="..\..\..\..\modules\juce_core\containers\juce_AbstractFifo.cpp">
@@ -1321,8 +1322,11 @@
     <ClCompile Include="..\..\JuceLibraryCode\include_juce_video.cpp"/>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\Source\GpuStateComponent.h"/>
+    <ClInclude Include="..\..\Source\gvt_state.h"/>
+    <ClInclude Include="..\..\Source\gvt_state_component.h"/>
     <ClInclude Include="..\..\Source\Trendgraph.h"/>
-    <ClInclude Include="..\..\Source\gpu_engine_usage.h"/>
+    <ClInclude Include="..\..\Source\Trendblock.h"/>
     <ClInclude Include="..\..\Source\MainComponent.h"/>
     <ClInclude Include="..\..\..\..\modules\juce_core\containers\juce_AbstractFifo.h"/>
     <ClInclude Include="..\..\..\..\modules\juce_core\containers\juce_Array.h"/>

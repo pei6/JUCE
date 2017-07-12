@@ -7,9 +7,15 @@
               companyEmail="zhang.xiaopei@live.cn">
   <MAINGROUP id="IbuPsS" name="gvt-state">
     <GROUP id="{447EDA41-22E4-C1F7-4B69-4E3FCB956110}" name="Source">
+      <FILE id="uyDJm9" name="GpuStateComponent.cpp" compile="1" resource="0"
+            file="Source/GpuStateComponent.cpp"/>
+      <FILE id="HeaTwp" name="GpuStateComponent.h" compile="0" resource="0"
+            file="Source/GpuStateComponent.h"/>
+      <FILE id="ix8vs8" name="gvt_state.h" compile="0" resource="0" file="Source/gvt_state.h"/>
+      <FILE id="qQfB2x" name="gvt_state_component.h" compile="0" resource="0"
+            file="Source/gvt_state_component.h"/>
       <FILE id="CqaFwY" name="Trendgraph.h" compile="0" resource="0" file="Source/Trendgraph.h"/>
-      <FILE id="yjwo0F" name="gpu_engine_usage.h" compile="0" resource="0"
-            file="Source/gpu_engine_usage.h"/>
+      <FILE id="yjwo0F" name="Trendblock.h" compile="0" resource="0" file="Source/Trendblock.h"/>
       <FILE id="tXISwH" name="MainComponent.cpp" compile="1" resource="0"
             file="Source/MainComponent.cpp"/>
       <FILE id="BnWLkc" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>

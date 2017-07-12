@@ -27,8 +27,12 @@ add_library( ${BINARY_NAME}
 
     SHARED
 
+    "../../../Source/GpuStateComponent.cpp"
+    "../../../Source/GpuStateComponent.h"
+    "../../../Source/gvt_state.h"
+    "../../../Source/gvt_state_component.h"
     "../../../Source/Trendgraph.h"
-    "../../../Source/gpu_engine_usage.h"
+    "../../../Source/Trendblock.h"
     "../../../Source/MainComponent.cpp"
     "../../../Source/MainComponent.h"
     "../../../Source/Main.cpp"
@@ -879,8 +883,11 @@ add_library( ${BINARY_NAME}
     "../../../JuceLibraryCode/JuceHeader.h"
 )
 
+set_source_files_properties("../../../Source/GpuStateComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Source/gvt_state.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Source/gvt_state_component.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Source/Trendgraph.h" PROPERTIES HEADER_FILE_ONLY TRUE)
-set_source_files_properties("../../../Source/gpu_engine_usage.h" PROPERTIES HEADER_FILE_ONLY TRUE)
+set_source_files_properties("../../../Source/Trendblock.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../Source/MainComponent.h" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../modules/juce_core/containers/juce_AbstractFifo.cpp" PROPERTIES HEADER_FILE_ONLY TRUE)
 set_source_files_properties("../../../../../modules/juce_core/containers/juce_AbstractFifo.h" PROPERTIES HEADER_FILE_ONLY TRUE)

@@ -17,7 +17,7 @@
 */
 #define GRAPH_POINT_NUM 200
 
-class Trendgraph    : public Component, public Timer
+class Trendgraph    : public Component
 {
 public:
     Trendgraph()
@@ -39,7 +39,7 @@ public:
 		unsigned h = getHeight() - y_space;
 		unsigned y_elements = max_val - min_val;
 		unsigned x_elements = GRAPH_POINT_NUM;
-		
+
         g.fillAll (Colours::white);   // clear the background
         g.setColour (Colours::blue);
 
@@ -66,18 +66,18 @@ public:
 			}
 		}
     }
-    
+
     virtual unsigned getNewSample()
     {
-        /* get new point value and store in the ::point array */        
+        /* get new point value and store in the ::point array */
 		Random r = Random(Time::currentTimeMillis());
 		return r.nextInt(100) % 100;
     }
-    
-    void timerCallback() override
-    {   
+
+    void refresh()
+    {
         unsigned val = getNewSample();
-        
+
         if (val < min_val)
             min_val = val;
         else if (val > max_val)
@@ -106,6 +106,6 @@ private:
     unsigned rb_len;
     unsigned min_val;
     unsigned max_val;
-    
+
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (Trendgraph)
 };
